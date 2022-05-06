@@ -1,0 +1,40 @@
+{
+  "title": "complex query",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "GT": {
+                "courses_avg": 95
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "adhe"
+              }
+            }
+          ]
+        },
+        {
+          "EQ": {
+            "courses_avg": 95.5
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": [{"courses_dept":"epse","courses_id":"411","courses_avg":95.5},
+    {"courses_dept":"epse","courses_id":"411","courses_avg":95.5},
+    {"courses_dept":"adhe","courses_id":"329","courses_avg":96.11}]
+}

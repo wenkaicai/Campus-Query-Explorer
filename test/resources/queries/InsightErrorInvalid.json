@@ -1,0 +1,19 @@
+{
+  "title": "insight Error Invalid",
+  "input": {
+    "WHERE": {
+      "EQ": {
+        "courses_avg": 92
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_invalid"
+      ],
+      "ORDER": "courses_dept"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

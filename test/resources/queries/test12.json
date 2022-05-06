@@ -1,0 +1,26 @@
+{
+  "title": "should pass, filter by course uuid",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_uuid": "76310"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    {
+      "courses_dept": "epse",
+      "courses_id": "534",
+      "courses_avg": 97
+    }
+  ]
+}

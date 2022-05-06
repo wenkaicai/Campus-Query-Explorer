@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<title>310 Frontend</title>
+		<link href="/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+	<h1 class = "header1">ヽ(✿ﾟ▽ﾟ)ノ UBC COURSE EXPLORER</h1>
+
+	<div class="divtotal">
+		<h2 class = "header2">Course Filters</h2>
+		<label for="coursedept">Course Department:</label>
+		<input class = "inputbox" type="text" id="coursedept" name="coursedept">
+
+		<label for="coursesinstructor">Course Instructor:</label>
+		<input class = "inputbox" type="text" id="coursesinstructor" name="coursesinstructor">
+
+		<label for="coursesid">Course ID:</label>
+		<input class = "inputbox" type="text" id="coursesid" name="coursesid">
+
+		<label for="coursesyear">Course Year:</label>
+		<input class = "inputbox" type="text" id="coursesyear" name="coursesyear">
+
+		<h2 class = "header2">Result Columns</h2>
+		<label for="firstcol">Select your 1st column:</label>
+		<select class = "dropbox" name="firstcol" id="firstcol">
+			<option value="courses_dept">Department</option>
+			<option value="courses_id">Course ID</option>
+			<option value="courses_uuid">UUID</option>
+			<option value="courses_avg">Average Grade</option>
+			<option value="courses_instructor">Instructor</option>
+			<option value="courses_title">Course Title</option>
+			<option value="courses_year">Year</option>
+		</select>
+		<br>
+		<label for="seccol">Select your 2nd column:</label>
+		<select class = "dropbox" name="seccol" id="seccol">
+			<option value="courses_dept">Department</option>
+			<option value="courses_id">Course ID</option>
+			<option value="courses_uuid">UUID</option>
+			<option value="courses_avg">Average Grade</option>
+			<option value="courses_instructor">Instructor</option>
+			<option value="courses_title">Course Title</option>
+			<option value="courses_year">Year</option>
+		</select>
+		<br>
+		<label for="thirdcol">Select your 3rd column:</label>
+		<select class = "dropbox" name="thirdcol" id="thirdcol">
+			<option value="courses_dept">Department</option>
+			<option value="courses_id">Course ID</option>
+			<option value="courses_uuid">UUID</option>
+			<option value="courses_avg">Average Grade</option>
+			<option value="courses_instructor">Instructor</option>
+			<option value="courses_title">Course Title</option>
+			<option value="courses_year">Year</option>
+		</select>
+		<br>
+		<h2 class = "header2">Result Order</h2>
+		<label for="order">Select your order:</label>
+		<select class = "dropbox"name="order" id="order">
+			<option value="courses_dept">Department</option>
+			<option value="courses_id">Course ID</option>
+			<option value="courses_uuid">UUID</option>
+			<option value="courses_avg">Average Grade</option>
+			<option value="courses_instructor">Instructor</option>
+			<option value="courses_title">Course Title</option>
+			<option value="courses_year">Year</option>
+		</select>
+
+		<br><br><br>
+		<button id="U1button" class="button" >Help to choose the course!</button>
+		<button id="U2button" class="button" >Help to choose the instructor!</button>
+		<br>
+
+		<h2 class = "header2">Result Field</h2>
+		<textarea class="textarea" id="outputfield" name="outputfield" rows="20" cols="50">
+		</textarea>
+	</div>
+		<script type="text/javascript" src="/frontend.js"></script>
+	</body>
+</html>

@@ -1,0 +1,601 @@
+{
+  "title": "should pass, filter by course audit",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_audit": 5
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_pass",
+        "courses_fail",
+        "courses_audit"
+      ],
+      "ORDER": "courses_audit"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    {
+      "courses_pass": 131,
+      "courses_fail": 1,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 94,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 73,
+      "courses_fail": 1,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 534,
+      "courses_fail": 28,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 16,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 16,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 1,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 5,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 5,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 7,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 7,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 6,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 6,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 39,
+      "courses_fail": 4,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 56,
+      "courses_fail": 3,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 54,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 273,
+      "courses_fail": 15,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 458,
+      "courses_fail": 49,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 223,
+      "courses_fail": 18,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 91,
+      "courses_fail": 3,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 449,
+      "courses_fail": 13,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 28,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 182,
+      "courses_fail": 9,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 435,
+      "courses_fail": 9,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 24,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 24,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 7,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 7,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 3,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 3,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 379,
+      "courses_fail": 29,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 117,
+      "courses_fail": 13,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 1827,
+      "courses_fail": 135,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 86,
+      "courses_fail": 2,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 39,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 211,
+      "courses_fail": 8,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 75,
+      "courses_fail": 0,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 1126,
+      "courses_fail": 72,
+      "courses_audit": 6
+    },
+    {
+      "courses_pass": 91,
+      "courses_fail": 1,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 491,
+      "courses_fail": 51,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 3,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 1,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 9,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 1,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 8,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 2,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 7,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 8,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 4,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 3,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 21,
+      "courses_fail": 4,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 21,
+      "courses_fail": 4,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 383,
+      "courses_fail": 13,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 15,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 15,
+      "courses_fail": 0,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 689,
+      "courses_fail": 1,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 28,
+      "courses_fail": 1,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 28,
+      "courses_fail": 1,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 1147,
+      "courses_fail": 86,
+      "courses_audit": 7
+    },
+    {
+      "courses_pass": 19,
+      "courses_fail": 0,
+      "courses_audit": 8
+    },
+    {
+      "courses_pass": 3,
+      "courses_fail": 0,
+      "courses_audit": 8
+    },
+    {
+      "courses_pass": 166,
+      "courses_fail": 26,
+      "courses_audit": 8
+    },
+    {
+      "courses_pass": 553,
+      "courses_fail": 9,
+      "courses_audit": 8
+    },
+    {
+      "courses_pass": 510,
+      "courses_fail": 17,
+      "courses_audit": 8
+    },
+    {
+      "courses_pass": 21,
+      "courses_fail": 1,
+      "courses_audit": 8
+    },
+    {
+      "courses_pass": 10,
+      "courses_fail": 0,
+      "courses_audit": 8
+    },
+    {
+      "courses_pass": 10,
+      "courses_fail": 0,
+      "courses_audit": 8
+    },
+    {
+      "courses_pass": 662,
+      "courses_fail": 4,
+      "courses_audit": 8
+    },
+    {
+      "courses_pass": 4,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 19,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 6,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 5,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 9,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 9,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 54,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 54,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 33,
+      "courses_fail": 1,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 17,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 48,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 9,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 9,
+      "courses_fail": 0,
+      "courses_audit": 9
+    },
+    {
+      "courses_pass": 15,
+      "courses_fail": 0,
+      "courses_audit": 10
+    },
+    {
+      "courses_pass": 5,
+      "courses_fail": 0,
+      "courses_audit": 10
+    },
+    {
+      "courses_pass": 14,
+      "courses_fail": 0,
+      "courses_audit": 10
+    },
+    {
+      "courses_pass": 14,
+      "courses_fail": 0,
+      "courses_audit": 10
+    },
+    {
+      "courses_pass": 39,
+      "courses_fail": 0,
+      "courses_audit": 10
+    },
+    {
+      "courses_pass": 4,
+      "courses_fail": 0,
+      "courses_audit": 11
+    },
+    {
+      "courses_pass": 11,
+      "courses_fail": 0,
+      "courses_audit": 11
+    },
+    {
+      "courses_pass": 11,
+      "courses_fail": 0,
+      "courses_audit": 11
+    },
+    {
+      "courses_pass": 146,
+      "courses_fail": 1,
+      "courses_audit": 11
+    },
+    {
+      "courses_pass": 8,
+      "courses_fail": 0,
+      "courses_audit": 12
+    },
+    {
+      "courses_pass": 23,
+      "courses_fail": 0,
+      "courses_audit": 12
+    },
+    {
+      "courses_pass": 17,
+      "courses_fail": 0,
+      "courses_audit": 12
+    },
+    {
+      "courses_pass": 29,
+      "courses_fail": 0,
+      "courses_audit": 12
+    },
+    {
+      "courses_pass": 372,
+      "courses_fail": 29,
+      "courses_audit": 12
+    },
+    {
+      "courses_pass": 8,
+      "courses_fail": 0,
+      "courses_audit": 12
+    },
+    {
+      "courses_pass": 8,
+      "courses_fail": 0,
+      "courses_audit": 12
+    },
+    {
+      "courses_pass": 21,
+      "courses_fail": 0,
+      "courses_audit": 13
+    },
+    {
+      "courses_pass": 20,
+      "courses_fail": 0,
+      "courses_audit": 13
+    },
+    {
+      "courses_pass": 25,
+      "courses_fail": 0,
+      "courses_audit": 14
+    },
+    {
+      "courses_pass": 146,
+      "courses_fail": 1,
+      "courses_audit": 14
+    },
+    {
+      "courses_pass": 15,
+      "courses_fail": 0,
+      "courses_audit": 15
+    },
+    {
+      "courses_pass": 17,
+      "courses_fail": 2,
+      "courses_audit": 15
+    },
+    {
+      "courses_pass": 33,
+      "courses_fail": 1,
+      "courses_audit": 15
+    },
+    {
+      "courses_pass": 9,
+      "courses_fail": 0,
+      "courses_audit": 17
+    },
+    {
+      "courses_pass": 14,
+      "courses_fail": 0,
+      "courses_audit": 18
+    },
+    {
+      "courses_pass": 59,
+      "courses_fail": 0,
+      "courses_audit": 18
+    },
+    {
+      "courses_pass": 13,
+      "courses_fail": 0,
+      "courses_audit": 19
+    },
+    {
+      "courses_pass": 16,
+      "courses_fail": 0,
+      "courses_audit": 19
+    },
+    {
+      "courses_pass": 16,
+      "courses_fail": 1,
+      "courses_audit": 19
+    },
+    {
+      "courses_pass": 9,
+      "courses_fail": 0,
+      "courses_audit": 19
+    },
+    {
+      "courses_pass": 9,
+      "courses_fail": 0,
+      "courses_audit": 19
+    },
+    {
+      "courses_pass": 23,
+      "courses_fail": 0,
+      "courses_audit": 20
+    },
+    {
+      "courses_pass": 18,
+      "courses_fail": 0,
+      "courses_audit": 21
+    },
+    {
+      "courses_pass": 59,
+      "courses_fail": 0,
+      "courses_audit": 21
+    },
+    {
+      "courses_pass": 14,
+      "courses_fail": 0,
+      "courses_audit": 23
+    }
+  ]
+}

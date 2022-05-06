@@ -1,0 +1,19 @@
+{
+  "title": "duplicate datasets",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 80
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses2_avg"
+      ],
+      "ORDER": "courses_dept"
+    }
+  },
+  "errorExpected": true,
+  "expected":"InsightError"
+}

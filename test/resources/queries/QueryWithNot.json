@@ -1,0 +1,37 @@
+{
+  "title": "query with not",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "EQ": {
+            "courses_avg": 97
+          }
+        },
+        {
+          "IS": {
+            "courses_dept": "*ps*"
+          }
+        },
+        {
+          "NOT": {
+            "IS": {
+              "courses_title": "health psych"
+            }
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_title",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": [{"courses_dept":"psyc","courses_title":"masters thesis","courses_avg":97},
+    {"courses_dept":"epse","courses_title":"acad assess schl","courses_avg":97}]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "no options",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 95
+      }
+    }
+  },
+  "errorExpected": true,
+  "expected":"InsightError"
+}

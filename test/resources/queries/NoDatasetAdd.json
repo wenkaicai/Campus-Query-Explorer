@@ -1,0 +1,19 @@
+{
+  "title": "no data add",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "rooms_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_avg",
+        "rooms_dept"
+      ],
+      "ORDER": "rooms_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected":"InsightError"
+}

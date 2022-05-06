@@ -1,0 +1,20 @@
+{
+  "title": "should fail, order is not in the columns",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_audit": 5
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_pass",
+        "courses_fail",
+        "courses_audit"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

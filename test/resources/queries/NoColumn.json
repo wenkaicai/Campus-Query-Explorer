@@ -1,0 +1,17 @@
+{
+  "title": "no column",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 80
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected":"InsightError"
+}

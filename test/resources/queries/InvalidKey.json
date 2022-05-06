@@ -1,0 +1,20 @@
+{
+  "title": "invalid key",
+  "input": {
+    "WHERE": {
+      "EQ": {
+        "courses_avg": 0
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_title",
+        "courses_ta"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected":"InsightError"
+}
